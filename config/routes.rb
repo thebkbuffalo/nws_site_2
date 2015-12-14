@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
+  get '/well_pumps' => 'well_pumps#index'
   resources :blogs, path: "blog"
 
   get '/signup' => 'users#new'

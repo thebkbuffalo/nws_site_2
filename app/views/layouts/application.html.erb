@@ -8,6 +8,10 @@
 </head>
 <body>
 
+  <!-- <% if current_user %>
+    Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+  <% end %> -->
+
   <% if current_user %>
     Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
   <% else %>
@@ -17,6 +21,9 @@
 
 <%= yield %>
 
+<%  unless current_page?('/') %>
+  <h2><%= link_to 'Back', :back %></h2>
+<% end %>
 
 
 </body>
