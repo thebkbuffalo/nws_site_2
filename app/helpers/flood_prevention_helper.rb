@@ -1,0 +1,2 @@
+module FloodPreventionHelper
+end

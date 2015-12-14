@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/well_pumps' => 'well_pumps#index'
+  get '/water_storage' => 'water_storage#index'
+  get '/water_treatment' => 'water_treatment#index'
+  get '/water_testing'=> 'water_testing#index'
+  get '/flood_prevention' => 'flood_prevention#index'
+
+
   resources :blogs, path: "blog"
 
   get '/signup' => 'users#new'
