@@ -1,3 +1,7 @@
 <h1>Crane Services for commercial well pumps (SO NESTED)</h1>
 
+<% @crane_services.each do |crane| %>
+  <%= image_tag(crane.crane_pic.url(:medium)) %>
+<% end %>
+
 <h2><%= link_to 'Back', '/well_pumps/commercial' %></h2>

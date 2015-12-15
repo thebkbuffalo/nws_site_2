@@ -1,4 +1,4 @@
-<%= form_for @crane_service, url: '/well_pumps/commercial/crane_service' do |f| %>
+<%= form_for CraneService.new, url: '/well_pumps/commercial/crane_services', html: { multipart: true } do |f| %>
   <%= f.file_field :crane_pic %>
   <br>
   <%= f.submit %>
