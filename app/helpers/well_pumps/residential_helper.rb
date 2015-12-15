@@ -1,0 +1,2 @@
+module WellPumps::ResidentialHelper
+end

@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   get '/water_testing'=> 'water_testing#index'
   get '/flood_prevention' => 'flood_prevention#index'
 
+  namespace :well_pumps do
+    get '/commercial' => 'commercial#index'
+    get '/residential' => 'residential#index'
+    get '/service_repair' => 'service_repair#index'
+    get '/well_inspections' => 'well_inspections#index'
+  end
+
 
   resources :blogs, path: "blog"
 
