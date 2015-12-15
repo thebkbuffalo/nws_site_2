@@ -25,7 +25,7 @@ Rails.application.routes.draw do
       get '/emergency_service' => 'emergency_service#index'
       get '/repairs_conversions_pit_repairs' => 'repairs_conversions_pit_repairs#index'
     end
-  end
+  end # ends well pumps namespace
 
   namespace :water_storage do
     get '/low_yielding_wells' => 'low_yielding_wells#index'
@@ -47,8 +47,12 @@ Rails.application.routes.draw do
         get '/ultrapure_process_reverse_osmosis' => 'ultrapure_process_reverse_osmosis#index'
         get '/custom_applications' => 'custom_applications#index'
       end
-    end
-  end
+      namespace :office do
+        get '/water_coolers' => 'water_coolers#index'
+        get '/drinking_water_icemakers' => 'drinking_water_icemakers#index'
+      end
+    end # ends commercial
+  end # ends water treatment namespace
 
 
   resources :blogs, path: "blog"
