@@ -40,6 +40,11 @@ Rails.application.routes.draw do
     namespace :commercial do
       get '/hospitality' => 'hospitality#index'
       get '/office' => 'office#index'
+
+      namespace :hospitality do
+        get '/softners' => 'softners#index'
+        
+      end
     end
   end
 
