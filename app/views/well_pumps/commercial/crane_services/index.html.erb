@@ -2,6 +2,11 @@
 
 <% @crane_services.each do |crane| %>
   <%= image_tag(crane.crane_pic.url(:medium)) %>
+  <br>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/well_pumps/commercial/crane_services/#{crane.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
 <% end %>
 
+<h2><%= link_to 'New Picture', '/well_pumps/commercial/crane_services/new' %></h2>
 <h2><%= link_to 'Back', '/well_pumps/commercial' %></h2>

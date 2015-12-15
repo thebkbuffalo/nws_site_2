@@ -45,10 +45,11 @@ class WellPumps::Commercial::CraneServicesController < ApplicationController
   end
 
   def destroy
-    @crane_service.destroy
-    respond_to do |format|
-      format.html { redirect_to '/well_pumps/commercial/crane_services' }
+    @crane_service = CraneService.find(params[:id])
+    if @crane_service.present?
+      @crane_service.destroy
     end
+    redirect_to '/well_pumps/commercial/crane_services'
   end
 
   private
