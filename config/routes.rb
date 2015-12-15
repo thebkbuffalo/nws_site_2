@@ -12,6 +12,10 @@ Rails.application.routes.draw do
     get '/residential' => 'residential#index'
     get '/service_repair' => 'service_repair#index'
     get '/well_inspections' => 'well_inspections#index'
+
+    namespace :commercial do
+      get '/crane_services' => 'crane_services#index'
+    end
   end
 
 
