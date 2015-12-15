@@ -18,6 +18,13 @@ Rails.application.routes.draw do
       get '/trenching' => 'trenching#index'
       get '/pumps_tanks_boosters' => 'pumps_tanks_boosters#index'
     end
+
+    namespace :residential do
+      get '/new_service_lines' => 'new_service_lines#index'
+      get '/new_pumps_pressure_tanks' => 'new_pumps_pressure_tanks#index'
+      get '/emergency_service' => 'emergency_service#index'
+      get '/repairs_conversions_pit_repairs' => 'repairs_conversions_pit_repairs#index'
+    end
   end
 
 
