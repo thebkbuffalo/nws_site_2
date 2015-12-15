@@ -43,7 +43,9 @@ Rails.application.routes.draw do
 
       namespace :hospitality do
         get '/softners' => 'softners#index'
-        
+        get '/chlorine_removal' => 'chlorine_removal#index'
+        get '/ultrapure_process_reverse_osmosis' => 'ultrapure_process_reverse_osmosis#index'
+        get '/custom_applications' => 'custom_applications#index'
       end
     end
   end
