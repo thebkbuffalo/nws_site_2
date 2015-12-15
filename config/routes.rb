@@ -32,6 +32,17 @@ Rails.application.routes.draw do
     get '/irrigation_storage' => 'irrigation_storage#index'
   end
 
+  namespace :water_treatment do
+    get '/commercial' => 'commercial#index'
+    get '/residential' => 'residential#index'
+    get '/reverse_osmosis' => 'reverse_osmosis#index'
+
+    namespace :commercial do
+      get '/hospitality' => 'hospitality#index'
+      get '/office' => 'office#index'
+    end
+  end
+
 
   resources :blogs, path: "blog"
 
