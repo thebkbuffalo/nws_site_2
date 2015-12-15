@@ -1,0 +1,2 @@
+module WaterStorage::IrrigationStorageHelper
+end

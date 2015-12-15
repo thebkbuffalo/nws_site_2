@@ -1,0 +1,2 @@
+module WaterStorage::LowYieldingWellsHelper
+end

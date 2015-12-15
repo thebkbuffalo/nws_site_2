@@ -27,6 +27,11 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :water_storage do
+    get '/low_yielding_wells' => 'low_yielding_wells#index'
+    get '/irrigation_storage' => 'irrigation_storage#index'
+  end
+
 
   resources :blogs, path: "blog"
 
