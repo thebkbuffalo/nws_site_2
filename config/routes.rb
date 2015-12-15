@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
     namespace :commercial do
       get '/crane_services' => 'crane_services#index'
+      get '/trenching' => 'trenching#index'
+      get '/pumps_tanks_boosters' => 'pumps_tanks_boosters#index'
     end
   end
 
