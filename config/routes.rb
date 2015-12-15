@@ -52,6 +52,12 @@ Rails.application.routes.draw do
         get '/drinking_water_icemakers' => 'drinking_water_icemakers#index'
       end
     end # ends commercial
+
+    namespace :reverse_osmosis do
+      get '/undersink' => 'undersink#index'
+      get '/basement' => 'basement#index'
+      get '/whole_house' => 'whole_house#index'
+    end # ends revers osmosis
   end # ends water treatment namespace
 
 
