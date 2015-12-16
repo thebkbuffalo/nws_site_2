@@ -1,3 +1,14 @@
 <h1>New Pumps and Pressure Tanks</h1>
 
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/well_pumps/residential/new_pumps_pressure_tanks/new' %></h3>
+<% end %>
+
+<% @pumps_pressure_tanks.each do |ppt| %>
+  <%= image_tag(ppt.ppt_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/well_pumps/residential/new_pumps_pressure_tanks/#{ppt.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
 <h2><%= link_to 'Back', '/well_pumps/residential' %></h2>

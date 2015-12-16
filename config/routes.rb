@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
     namespace :residential do
       resources :new_service_lines
-      get '/new_pumps_pressure_tanks' => 'new_pumps_pressure_tanks#index'
+      resources :new_pumps_pressure_tanks
       get '/emergency_service' => 'emergency_service#index'
       get '/repairs_conversions_pit_repairs' => 'repairs_conversions_pit_repairs#index'
     end

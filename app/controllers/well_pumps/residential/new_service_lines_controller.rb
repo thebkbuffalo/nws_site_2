@@ -11,7 +11,7 @@ class WellPumps::Residential::NewServiceLinesController < ApplicationController
     end
   end
 
-  def New
+  def new
     if current_user
       @new_service_line = NewServiceLine.new
     else

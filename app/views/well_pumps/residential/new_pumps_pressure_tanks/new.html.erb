@@ -1,0 +1,5 @@
+<%= form_for PumpsPressureTank.new, url: '/well_pumps/residential/new_pumps_pressure_tanks', html: { multipart: true } do |f| %>
+  <%= f.file_field :ppt_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
