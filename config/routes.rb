@@ -23,7 +23,7 @@ Rails.application.routes.draw do
       resources :new_service_lines
       resources :new_pumps_pressure_tanks
       resources :emergency_services
-      get '/repairs_conversions_pit_repairs' => 'repairs_conversions_pit_repairs#index'
+      resources :repairs_conversions_pit_repairs
     end
   end # ends well pumps namespace
 

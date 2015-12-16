@@ -1,0 +1,5 @@
+<%= form_for RepairConversionPitRepair.new, url: '/well_pumps/residential/repairs_conversions_pit_repairs', html: { multipart: true } do |f| %>
+  <%= f.file_field :rcpr_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

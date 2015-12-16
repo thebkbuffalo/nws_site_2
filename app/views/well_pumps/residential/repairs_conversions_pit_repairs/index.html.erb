@@ -1,3 +1,14 @@
 <h1>Custom Repairs | Jet Pump Conversions | Well Pit Repairs</h1>
 
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/well_pumps/residential/repairs_conversions_pit_repairs/new' %></h3>
+<% end %>
+
+<% @pit_conversions.each do |rcpr| %>
+  <%= image_tag(rcpr.rcpr_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/well_pumps/residential/repairs_conversions_pit_repairs/#{rcpr.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
 <h2><%= link_to 'Back', '/well_pumps/residential' %></h2>
