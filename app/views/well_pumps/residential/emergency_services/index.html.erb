@@ -1,0 +1,14 @@
+<h1>well pump residential Emergency Service</h1>
+
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/well_pumps/residential/emergency_services/new' %></h3>
+<% end %>
+
+<% @emergency_services.each do |emergency| %>
+  <%= image_tag(emergency.emergency_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/well_pumps/residential/emergency_services/#{emergency.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
+<h2><%= link_to 'Back', '/well_pumps/residential' %></h2>

@@ -1,0 +1,5 @@
+<%= form_for EmergencyService.new, url: '/well_pumps/residential/emergency_services', html: { multipart: true } do |f| %>
+  <%= f.file_field :emergency_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
