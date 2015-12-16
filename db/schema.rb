@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216221449) do
+ActiveRecord::Schema.define(version: 20151216224125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,15 @@ ActiveRecord::Schema.define(version: 20151216221449) do
     t.string   "emergency_pic_content_type"
     t.integer  "emergency_pic_file_size"
     t.datetime "emergency_pic_updated_at"
+  end
+
+  create_table "irrigation_storages", force: :cascade do |t|
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.string   "irrigation_storage_pic_file_name"
+    t.string   "irrigation_storage_pic_content_type"
+    t.integer  "irrigation_storage_pic_file_size"
+    t.datetime "irrigation_storage_pic_updated_at"
   end
 
   create_table "low_yielding_wells", force: :cascade do |t|

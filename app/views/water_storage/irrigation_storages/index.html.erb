@@ -1,0 +1,14 @@
+<h1>Irrigation Storage</h1>
+
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_storage/irrigation_storages/new' %></h3>
+<% end %>
+
+<% @irrigation_storages.each do |irrigation| %>
+  <%= image_tag(irrigation.irrigation_storage_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_storage/irrigation_storages/#{irrigation.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
+<h2><%= link_to 'Back', '/water_storage' %></h2>

@@ -1,0 +1,5 @@
+<%= form_for IrrigationStorage.new, url: '/water_storage/irrigation_storages', html: { multipart: true } do |f| %>
+  <%= f.file_field :irrigation_storage_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
