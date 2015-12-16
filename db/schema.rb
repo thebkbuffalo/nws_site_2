@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216214144) do
+ActiveRecord::Schema.define(version: 20151216215403) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -101,6 +101,15 @@ ActiveRecord::Schema.define(version: 20151216214144) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "well_inspections", force: :cascade do |t|
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.string   "well_inspection_pic_file_name"
+    t.string   "well_inspection_pic_content_type"
+    t.integer  "well_inspection_pic_file_size"
+    t.datetime "well_inspection_pic_updated_at"
   end
 
 end

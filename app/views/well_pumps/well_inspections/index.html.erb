@@ -1,3 +1,13 @@
 <h1>well inspections</h1>
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/well_pumps/well_inspections/new' %></h3>
+<% end %>
+
+<% @well_inspections.each do |well| %>
+  <%= image_tag(well.well_inspection_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/well_pumps/well_inspections/#{well.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
 
 <h2><%= link_to 'Back', '/well_pumps' %></h2>
