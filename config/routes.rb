@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   namespace :well_pumps do
     get '/commercial' => 'commercial#index'
     get '/residential' => 'residential#index'
-    get '/service_repair' => 'service_repair#index'
-    get '/well_inspections' => 'well_inspections#index'
+    resources :service_repairs
+    resources :well_inspections
 
     namespace :commercial do
       resources :crane_services

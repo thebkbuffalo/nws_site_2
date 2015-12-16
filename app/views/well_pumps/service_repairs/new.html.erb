@@ -1,0 +1,5 @@
+<%= form_for ServiceRepair.new, url: '/well_pumps/service_repairs', html: { multipart: true } do |f| %>
+  <%= f.file_field :service_repair_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
