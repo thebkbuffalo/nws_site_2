@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151215233344) do
+ActiveRecord::Schema.define(version: 20151216000419) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,8 +33,12 @@ ActiveRecord::Schema.define(version: 20151215233344) do
   end
 
   create_table "trenchings", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "trench_pic_file_name"
+    t.string   "trench_pic_content_type"
+    t.integer  "trench_pic_file_size"
+    t.datetime "trench_pic_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

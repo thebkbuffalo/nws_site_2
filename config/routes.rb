@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
     namespace :commercial do
       resources :crane_services
-      resources :trenching
+      resources :trenchings
       get '/pumps_tanks_boosters' => 'pumps_tanks_boosters#index'
     end
 

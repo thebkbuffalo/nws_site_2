@@ -1,0 +1,5 @@
+<%= form_for Trenching.new, url: '/well_pumps/commercial/trenchings', html: { multipart: true } do |f| %>
+  <%= f.file_field :trench_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
