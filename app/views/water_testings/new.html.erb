@@ -1,0 +1,5 @@
+<%= form_for WaterTesting.new, url: '/water_testings', html: { multipart: true } do |f| %>
+  <%= f.file_field :water_testing_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
