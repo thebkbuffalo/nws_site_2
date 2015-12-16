@@ -28,7 +28,7 @@ class WellPumps::Commercial::TrenchingsController < ApplicationController
       if @trenching.save
         format.html {redirect_to '/well_pumps/commercial/trenchings'}
       else
-        format.html{rendiner :new}
+        format.html{render :new}
       end
     end
   end

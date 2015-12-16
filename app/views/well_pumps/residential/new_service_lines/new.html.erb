@@ -1,0 +1,5 @@
+<%= form_for NewServiceLine.new, url: '/well_pumps/residential/new_service_lines', html: { multipart: true } do |f| %>
+  <%= f.file_field :nsl_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

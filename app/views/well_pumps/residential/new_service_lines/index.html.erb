@@ -1,3 +1,14 @@
 <h1>new service lines from residential well pumps</h1>
 
+<% if current_user %>
+  <h3><%= link_to 'New Pic', '/well_pumps/residential/new_service_lines/new' %></h3>
+<% end %>
+
+<% @new_service_lines.each do |nsl| %>
+  <%= image_tag(nsl.nsl_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/well_pumps/residential/new_service_lines/#{nsl.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
 <h2><%= link_to 'Back', '/well_pumps/residential' %></h2>
