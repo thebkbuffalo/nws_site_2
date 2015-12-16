@@ -1,0 +1,5 @@
+<%= form_for PumpsTanksBooster.new, url: '/well_pumps/commercial/pumps_tanks_boosters', html: { multipart: true } do |f| %>
+  <%= f.file_field :ptb_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

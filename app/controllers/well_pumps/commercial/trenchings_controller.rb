@@ -61,5 +61,4 @@ class WellPumps::Commercial::TrenchingsController < ApplicationController
     params.require(:trenching).permit(:trench_pic)
   end
 
-
 end
