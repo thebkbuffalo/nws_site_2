@@ -1,0 +1,14 @@
+<h1>this is how you prevent floods and shit</h1>
+
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/flood_preventions/new' %></h3>
+<% end %>
+
+<% @flood_preventions.each do |flood| %>
+  <%= image_tag(flood.flood_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/flood_preventions/#{flood.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
+<h2><%= link_to 'Back', '/' %></h2>

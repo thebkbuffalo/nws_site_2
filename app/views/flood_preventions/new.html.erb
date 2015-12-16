@@ -1,0 +1,5 @@
+<%= form_for FloodPrevention.new, url: '/flood_preventions', html: { multipart: true } do |f| %>
+  <%= f.file_field :flood_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

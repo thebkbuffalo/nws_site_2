@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/water_storage' => 'water_storage#index'
   get '/water_treatment' => 'water_treatment#index'
   resources :water_testings
-  get '/flood_prevention' => 'flood_prevention#index'
+  resources :flood_preventions
 
   namespace :well_pumps do
     get '/commercial' => 'commercial#index'
