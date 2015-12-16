@@ -1,0 +1,5 @@
+<%= form_for LowYieldingWell.new, url: '/water_storage/low_yielding_wells', html: { multipart: true } do |f| %>
+  <%= f.file_field :low_yield_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

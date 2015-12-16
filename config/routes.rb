@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   end # ends well pumps namespace
 
   namespace :water_storage do
-    get '/low_yielding_wells' => 'low_yielding_wells#index'
+    resources :low_yielding_wells
     get '/irrigation_storage' => 'irrigation_storage#index'
   end
 
