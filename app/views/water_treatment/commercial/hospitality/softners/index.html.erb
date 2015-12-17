@@ -1,3 +1,14 @@
 <h1>Softners</h1>
 
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/commercial/hospitality/softners/new' %></h3>
+<% end %>
+
+<% @softners.each do |soft| %>
+  <%= image_tag(soft.softner_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/softners/#{soft.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
 <h2><%= link_to 'Back', '/water_treatment/commercial/hospitality' %></h2>
