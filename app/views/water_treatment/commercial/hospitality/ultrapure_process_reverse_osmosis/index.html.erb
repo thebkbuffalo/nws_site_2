@@ -1,3 +1,14 @@
 <h1>UltraPure Water | Process Water | Reverse Osmosis</h1>
 
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis/new' %></h3>
+<% end %>
+
+<% @ultrapures.each do |ultra| %>
+  <%= image_tag(ultra.ultrapure_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis/#{ultra.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
 <h2><%= link_to 'Back', '/water_treatment/commercial/hospitality' %></h2>

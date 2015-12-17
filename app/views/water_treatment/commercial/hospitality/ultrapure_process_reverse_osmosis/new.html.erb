@@ -1,0 +1,5 @@
+<%= form_for Ultrapure.new, url: '/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis', html: { multipart: true } do |f| %>
+  <%= f.file_field :ultrapure_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

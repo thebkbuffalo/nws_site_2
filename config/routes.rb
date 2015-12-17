@@ -44,7 +44,7 @@ Rails.application.routes.draw do
       namespace :hospitality do
         resources :softners
         resources :chlorine_removals
-        get '/ultrapure_process_reverse_osmosis' => 'ultrapure_process_reverse_osmosis#index'
+        resources :ultrapure_process_reverse_osmosis
         get '/custom_applications' => 'custom_applications#index'
       end
       namespace :office do
