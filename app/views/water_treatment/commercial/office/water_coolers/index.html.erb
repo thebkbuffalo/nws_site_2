@@ -1,3 +1,12 @@
 <h1>water coolers</h1>
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/commercial/office/water_coolers/new' %></h3>
+<% end %>
 
+<% @water_coolers.each do |cooler| %>
+  <%= image_tag(cooler.water_cooler_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/commercial/office/water_coolers/#{cooler.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
 <h2><%= link_to 'Back', '/water_treatment/commercial/office' %></h2>

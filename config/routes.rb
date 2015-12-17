@@ -48,7 +48,7 @@ Rails.application.routes.draw do
         resources :custom_applications
       end
       namespace :office do
-        get '/water_coolers' => 'water_coolers#index'
+        resources :water_coolers
         get '/drinking_water_icemakers' => 'drinking_water_icemakers#index'
       end
     end # ends commercial

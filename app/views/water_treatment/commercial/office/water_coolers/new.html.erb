@@ -1,0 +1,5 @@
+<%= form_for WaterCooler.new, url: '/water_treatment/commercial/office/water_coolers', html: { multipart: true } do |f| %>
+  <%= f.file_field :water_cooler_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
