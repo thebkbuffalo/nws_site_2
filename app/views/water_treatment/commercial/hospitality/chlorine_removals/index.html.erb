@@ -1,3 +1,13 @@
 <h1>Chlorine Removal</h1>
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/commercial/hospitality/chlorine_removals/new' %></h3>
+<% end %>
+
+<% @chlorine_removals.each do |chlorine| %>
+  <%= image_tag(chlorine.chlorine_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/chlorine_removals/#{chlorine.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
 
 <h2><%= link_to 'Back', '/water_treatment/commercial/hospitality' %></h2>

@@ -1,0 +1,5 @@
+<%= form_for ChlorineRemoval.new, url: '/water_treatment/commercial/hospitality/chlorine_removals', html: { multipart: true } do |f| %>
+  <%= f.file_field :chlorine_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

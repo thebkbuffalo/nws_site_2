@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217002839) do
+ActiveRecord::Schema.define(version: 20151217011528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 20151217002839) do
     t.datetime "updated_at", null: false
     t.string   "title"
     t.text     "content"
+  end
+
+  create_table "chlorine_removals", force: :cascade do |t|
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "chlorine_pic_file_name"
+    t.string   "chlorine_pic_content_type"
+    t.integer  "chlorine_pic_file_size"
+    t.datetime "chlorine_pic_updated_at"
   end
 
   create_table "crane_services", force: :cascade do |t|
