@@ -1,0 +1,13 @@
+<h1>Whole House RO</h1>
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/reverse_osmosis/whole_houses/new' %></h3>
+<% end %>
+
+<% @whole_houses.each do |house| %>
+  <%= image_tag(house.house_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/reverse_osmosis/whole_houses/#{house.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
+<h2><%= link_to 'Back', '/water_treatment/reverse_osmosis' %></h2>

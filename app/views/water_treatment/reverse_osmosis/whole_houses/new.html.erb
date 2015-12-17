@@ -1,0 +1,5 @@
+<%= form_for WholeHouse.new, url: '/water_treatment/reverse_osmosis/whole_houses', html: { multipart: true } do |f| %>
+  <%= f.file_field :house_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

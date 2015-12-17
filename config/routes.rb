@@ -56,7 +56,7 @@ Rails.application.routes.draw do
     namespace :reverse_osmosis do
       resources :undersinks
       resources :basements
-      get '/whole_house' => 'whole_house#index'
+      resources :whole_houses
     end # ends revers osmosis
   end # ends water treatment namespace
 
