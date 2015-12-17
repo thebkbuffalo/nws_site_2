@@ -45,7 +45,7 @@ Rails.application.routes.draw do
         resources :softners
         resources :chlorine_removals
         resources :ultrapure_process_reverse_osmosis
-        get '/custom_applications' => 'custom_applications#index'
+        resources :custom_applications
       end
       namespace :office do
         get '/water_coolers' => 'water_coolers#index'

@@ -1,0 +1,5 @@
+<%= form_for CustomApplication.new, url: '/water_treatment/commercial/hospitality/custom_applications', html: { multipart: true } do |f| %>
+  <%= f.file_field :custom_app_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

@@ -1,3 +1,14 @@
 <h1>Custom Applications</h1>
 
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/commercial/hospitality/custom_applications/new' %></h3>
+<% end %>
+
+<% @custom_applications.each do |custom| %>
+  <%= image_tag(custom.custom_app_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/custom_applications/#{custom.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
 <h2><%= link_to 'Back', '/water_treatment/commercial/hospitality' %></h2>
