@@ -3,5 +3,7 @@ body {
 }
 
 .nav {
-  /*border-bottom: 0px;*/
+  border-bottom: 0px;
+  font-size: 1.3em;
+  margin: .4em 0;
 }
