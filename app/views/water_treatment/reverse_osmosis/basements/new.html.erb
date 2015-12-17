@@ -1,0 +1,5 @@
+<%= form_for Basement.new, url: '/water_treatment/reverse_osmosis/basements', html: { multipart: true } do |f| %>
+  <%= f.file_field :basement_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
