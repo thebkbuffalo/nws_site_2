@@ -1,0 +1,5 @@
+<%= form_for Icemaker.new, url: '/water_treatment/commercial/office/drinking_water_icemakers', html: { multipart: true } do |f| %>
+  <%= f.file_field :icemaker_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>

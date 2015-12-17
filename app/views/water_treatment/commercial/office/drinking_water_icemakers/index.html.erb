@@ -1,3 +1,13 @@
 <h1>Kitchen Drinking Water and Icemakers</h1>
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/commercial/office/drinking_water_icemakers/new' %></h3>
+<% end %>
+
+<% @icemakers.each do |ice| %>
+  <%= image_tag(ice.icemaker_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/commercial/office/drinking_water_icemakers/#{ice.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
 
 <h2><%= link_to 'Back', '/water_treatment/commercial/office' %></h2>

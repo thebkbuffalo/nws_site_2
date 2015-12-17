@@ -49,7 +49,7 @@ Rails.application.routes.draw do
       end
       namespace :office do
         resources :water_coolers
-        get '/drinking_water_icemakers' => 'drinking_water_icemakers#index'
+        resources :drinking_water_icemakers
       end
     end # ends commercial
 
