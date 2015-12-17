@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217033644) do
+ActiveRecord::Schema.define(version: 20151217035047) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -174,6 +174,15 @@ ActiveRecord::Schema.define(version: 20151217033644) do
     t.string   "ultrapure_pic_content_type"
     t.integer  "ultrapure_pic_file_size"
     t.datetime "ultrapure_pic_updated_at"
+  end
+
+  create_table "undersinks", force: :cascade do |t|
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "undersink_pic_file_name"
+    t.string   "undersink_pic_content_type"
+    t.integer  "undersink_pic_file_size"
+    t.datetime "undersink_pic_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

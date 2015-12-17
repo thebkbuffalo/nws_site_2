@@ -1,0 +1,14 @@
+<h1>Undersink RO</h1>
+
+<% if current_user %>
+  <h3><%= link_to 'New Picture', '/water_treatment/reverse_osmosis/undersinks/new' %></h3>
+<% end %>
+
+<% @undersinks.each do |sink| %>
+  <%= image_tag(sink.undersink_pic.url(:medium)) %>
+  <% if current_user %>
+    <h4><%= link_to 'DELETE', "/water_treatment/reverse_osmosis/undersinks/#{sink.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <% end %>
+<% end %>
+
+<h2><%= link_to 'Back', '/water_treatment/reverse_osmosis' %></h2>

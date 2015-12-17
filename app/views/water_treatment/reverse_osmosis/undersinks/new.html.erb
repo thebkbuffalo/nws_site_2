@@ -1,0 +1,5 @@
+<%= form_for Undersink.new, url: '/water_treatment/reverse_osmosis/undersinks', html: { multipart: true } do |f| %>
+  <%= f.file_field :undersink_pic %>
+  <br>
+  <%= f.submit %>
+<% end %>
