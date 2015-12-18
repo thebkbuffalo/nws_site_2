@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :messages, only: [:new, :create]
+  resources :messages, only: [:index, :create]
 
   root 'welcome#index'
 
