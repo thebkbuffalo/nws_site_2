@@ -2,6 +2,11 @@ body {
   margin-top: 6em;
 }
 
+hr {
+  border-color: black;
+  margin: 1.2em 10em;
+}
+
 a:hover {
   background: none;
   color: black;
@@ -19,4 +24,10 @@ a:hover {
 
 .center {
   text-align: center;
+}
+
+.center-justified {
+  text-align: justify;
+  margin: 0 auto;
+  width: 30em;
 }

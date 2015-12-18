@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = Blog.all.order('created_at desc')
   end
 
   # GET /blogs/1
@@ -35,7 +35,7 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
-        format.html { redirect_to '/blogs', notice: 'Blog was successfully created.' }
+        format.html { redirect_to '/blog' }
         format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
@@ -49,7 +49,7 @@ class BlogsController < ApplicationController
   def update
     respond_to do |format|
       if @blog.update(blog_params)
-        format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
+        format.html { redirect_to '/blog' }
         format.json { render :show, status: :ok, location: @blog }
       else
         format.html { render :edit }
