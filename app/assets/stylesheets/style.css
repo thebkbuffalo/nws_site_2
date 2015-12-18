@@ -2,6 +2,11 @@ body {
   margin-top: 6em;
 }
 
+a:hover {
+  background: none;
+  color: black;
+}
+
 .nav {
   border-bottom: 0px;
   font-size: 1.3em;
@@ -10,4 +15,8 @@ body {
 
 .user_stuff {
   text-align: right;
+}
+
+.center {
+  text-align: center;
 }
