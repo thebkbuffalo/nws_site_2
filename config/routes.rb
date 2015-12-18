@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages, only: [:new, :create]
+
   root 'welcome#index'
 
   get '/well_pumps' => 'well_pumps#index'
