@@ -5,10 +5,12 @@
 <% end %>
 
 <% @flood_preventions.each do |flood| %>
-  <%= image_tag(flood.flood_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/flood_preventions/#{flood.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(flood.flood_pic.url(:medium)), flood.flood_pic.url, rel: "lightbox" %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/flood_preventions/#{flood.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/' %></h1>

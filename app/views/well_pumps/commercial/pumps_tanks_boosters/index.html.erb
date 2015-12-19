@@ -1,14 +1,16 @@
 <h1>PUMPS | TANKS | BOOSTERS</h1>
 
 <% if current_user %>
-  <h4><%= link_to 'New Picture', '/well_pumps/commercial/pumps_tanks_boosters/new' %></h4>
+  <h2><%= link_to 'New Picture', '/well_pumps/commercial/pumps_tanks_boosters/new' %></h2>
 <% end %>
 
 <% @pumps_tanks_boosters.each do |ptb| %>
-  <%= image_tag(ptb.ptb_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/well_pumps/commercial/pumps_tanks_boosters/#{ptb.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(ptb.ptb_pic.url(:medium)), ptb.ptb_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/well_pumps/commercial/pumps_tanks_boosters/#{ptb.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 

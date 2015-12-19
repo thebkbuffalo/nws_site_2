@@ -5,10 +5,12 @@
 <% end %>
 
 <% @low_yielding_wells.each do |low_yield| %>
-  <%= image_tag(low_yield.low_yield_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/water_storage/low_yielding_wells/#{low_yield.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(low_yield.low_yield_pic.url(:medium)), low_yield.low_yield_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/water_storage/low_yielding_wells/#{low_yield.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/water_storage' %></h1>

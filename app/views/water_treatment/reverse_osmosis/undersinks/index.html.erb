@@ -5,10 +5,12 @@
 <% end %>
 
 <% @undersinks.each do |sink| %>
-  <%= image_tag(sink.undersink_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/water_treatment/reverse_osmosis/undersinks/#{sink.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(sink.undersink_pic.url(:medium)), sink.undersink_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/water_treatment/reverse_osmosis/undersinks/#{sink.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/water_treatment/reverse_osmosis' %></h1>

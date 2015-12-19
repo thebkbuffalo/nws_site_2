@@ -5,10 +5,12 @@
 <% end %>
 
 <% @pumps_pressure_tanks.each do |ppt| %>
-  <%= image_tag(ppt.ppt_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/well_pumps/residential/new_pumps_pressure_tanks/#{ppt.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(ppt.ppt_pic.url(:medium)), ppt.ppt_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/well_pumps/residential/new_pumps_pressure_tanks/#{ppt.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/well_pumps/residential' %></h1>

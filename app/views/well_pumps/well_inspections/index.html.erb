@@ -4,10 +4,12 @@
 <% end %>
 
 <% @well_inspections.each do |well| %>
-  <%= image_tag(well.well_inspection_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/well_pumps/well_inspections/#{well.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(well.well_inspection_pic.url(:medium)), well.well_inspection_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/well_pumps/well_inspections/#{well.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/well_pumps' %></h1>

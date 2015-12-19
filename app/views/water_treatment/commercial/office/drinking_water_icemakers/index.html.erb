@@ -4,10 +4,12 @@
 <% end %>
 
 <% @icemakers.each do |ice| %>
-  <%= image_tag(ice.icemaker_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/water_treatment/commercial/office/drinking_water_icemakers/#{ice.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class='images'>
+    <%= link_to image_tag(ice.icemaker_pic.url(:medium)), ice.icemaker_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/water_treatment/commercial/office/drinking_water_icemakers/#{ice.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 clas='back'><%= link_to 'Back', '/water_treatment/commercial/office' %></h1>

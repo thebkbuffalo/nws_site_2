@@ -5,10 +5,12 @@
 <% end %>
 
 <% @pit_conversions.each do |rcpr| %>
-  <%= image_tag(rcpr.rcpr_pic.url(:medium)) %>
-  <% if current_user %>
-    <h4><%= link_to 'DELETE', "/well_pumps/residential/repairs_conversions_pit_repairs/#{rcpr.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-  <% end %>
+  <div class="images">
+    <%= link_to image_tag(rcpr.rcpr_pic.url(:medium)), rcpr.rcpr_pic.url, rel: 'lightbox' %>
+    <% if current_user %>
+      <h4><%= link_to 'DELETE', "/well_pumps/residential/repairs_conversions_pit_repairs/#{rcpr.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+    <% end %>
+  </div>
 <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/well_pumps/residential' %></h1>
