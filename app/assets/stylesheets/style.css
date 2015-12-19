@@ -47,3 +47,7 @@ a:hover {
   height: 210px;
   width: 210px;
 }
+
+.login_form {
+  margin: 0 40em 0 15em;
+}
