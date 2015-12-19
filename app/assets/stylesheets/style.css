@@ -19,7 +19,8 @@ a:hover {
 }
 
 .user_stuff {
-  text-align: right;
+  /*text-align: right;*/
+  margin-top: 2em;
 }
 
 .center {
