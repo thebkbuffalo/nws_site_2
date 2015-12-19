@@ -79,3 +79,9 @@ a:hover {
   padding: 3em 5em;
   background: white;
 }
+
+.testings_button {
+  border: 1px solid black;
+  padding: 3em 4em;
+  background: #88BEF5;
+}
