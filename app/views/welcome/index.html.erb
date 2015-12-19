@@ -1,11 +1,17 @@
-<div class='center'>
-  <!-- <h1>NATIONAL WATER SERVICE</h1> -->
-  <!-- <hr> -->
-  <h2>How Can We Help You?</h2>
-  <hr style='margin:0 30em;'>
-  <h3><%= link_to 'Well Parts & Services', '/well_pumps' %></h3>
-  <h3><%= link_to 'Well Storage Tanks', '/water_storage' %></h3>
-  <h3><%= link_to 'Water Testing Services', '/water_testings' %></h3>
-  <h3><%= link_to 'Flood Prevention Systems', '/flood_preventions' %></h3>
-  <h3><%= link_to 'Water Treatment Systems', '/water_treatment' %></h3>
+<div class="welcome_page">
+  <div class='center'>
+    <!-- <h1>NATIONAL WATER SERVICE</h1> -->
+    <!-- <hr> -->
+    <h2>How Can We Help You?</h2>
+    <hr style='margin:0 30em;'>
+    <!-- <button type="button" class="btn btn-secondary btn-lg home_btn"><%= link_to 'Well Parts & Services', '/well_pumps' %></button> -->
+    <a href="/well_pumps"><button type="button" class="btn btn-secondary btn-lg home_btn">Well Pumps</button></a>
+    <!-- <h3><%= link_to 'Well Storage Tanks', '/water_storage' %></h3> -->
+    <div class="storage_tank_links text-center">
+      <h2><%= link_to 'Well Storage Tanks', '/water_storage', class: 'pic_link' %></h2>
+    </div>
+    <h3><%= link_to 'Water Testing Services', '/water_testings' %></h3>
+    <h3><%= link_to 'Flood Prevention Systems', '/flood_preventions' %></h3>
+    <h3><%= link_to 'Water Treatment Systems', '/water_treatment' %></h3>
+  </div>
 </div>

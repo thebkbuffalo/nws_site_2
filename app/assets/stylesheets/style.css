@@ -23,7 +23,7 @@ a:hover {
 }
 
 .website_header {
-  
+
 }
 
 .user_stuff {
@@ -59,4 +59,23 @@ a:hover {
 .login_form, .signup_form {
   width: 50%;
   margin: 5% auto;
+}
+
+.pic_link {
+  color: white;
+}
+
+.home_btn {
+  background: white;
+  border: 1px solid black;
+  padding: 3em 5em;
+  margin: 2em 0;
+}
+
+.storage_tank_links {
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 0 30em;
+  padding: 3em 0;
+  background-image: url('https://placeimg.com/1000/250/nature');
 }
