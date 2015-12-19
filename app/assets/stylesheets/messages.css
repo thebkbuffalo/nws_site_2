@@ -1,4 +1,12 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.contact_header {
+  text-align: center;
+  margin: 3em 0;
+}
+
+.contact_content {
+  margin: 2em 20em;
+}
+
+#message_form {
+  margin: 2em 20em;
+}

@@ -2,6 +2,10 @@ body {
   margin-top: 6em;
 }
 
+textarea {
+  resize: none;
+}
+
 hr {
   border-color: black;
   margin: 1.2em 10em;
@@ -48,6 +52,7 @@ a:hover {
   width: 210px;
 }
 
-.login_form {
-  margin: 0 40em 0 15em;
+.login_form, .signup_form {
+  width: 50%;
+  margin: 5% auto;
 }
