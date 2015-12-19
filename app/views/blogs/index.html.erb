@@ -7,9 +7,9 @@
   <hr>
     <% @blogs.each do |blog| %>
       <div class='blog_content'>
-        <h2><%= blog.title %></h2>
+        <h2><%= simple_format(blog.title) %></h2>
         <br>
-        <h4><%= blog.content %></h4>
+        <h4><%= simple_format(blog.content) %></h4>
         <br>
         <% if current_user %>
           <%= link_to 'Show', blog %> |
