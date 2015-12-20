@@ -1,5 +1,5 @@
 body {
-  margin-top: 6em;
+  margin-top: 7em;
 }
 
 textarea {
@@ -20,12 +20,29 @@ a:hover {
 .nav {
   border-bottom: 0px;
   font-size: 1.3em;
-  margin: .4em 0;
+  margin: .7em 0;
 }
 
-.website_header {
-
+.navbar {
+  background-color: #5FC9F3;
 }
+
+.nav-tabs li a:hover {
+  background: #2E79BA;
+  border: none;
+}
+
+.nav-tabs .open li a:active {
+  background-color: #5FC9F3;
+}
+
+.nav .open a:focus {
+  background-color: #2E79BA;
+}
+
+/*.website_header {
+
+}*/
 
 .user_stuff {
   /*text-align: right;*/
