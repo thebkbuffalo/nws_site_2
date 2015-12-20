@@ -42,9 +42,24 @@ a:hover {
   background-color: #2E79BA;
 }
 
+#main_dropdown {
+  margin: .5em 0 0 3em;
+}
+
+#new_pics_dropdown {
+  width: 25em;
+  height: 3.5em;
+}
+
 /*.website_header {
 
 }*/
+
+.flood_button {
+  border: 1px solid black;
+  height: 3em;
+  width: 4em;
+}
 
 .user_stuff {
   /*text-align: right;*/

@@ -47,6 +47,38 @@
     </div>
   </nav>
 
+  <% if current_user %>
+    <div class='dropdown' id='main_dropdown'>
+      <button class="btn btn-default dropdown-toggle" type="button" id="new_pics_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Jump To Landing Pages
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="new_pics_dropdown">
+        <li><a href='/blog/new'>New Blog</a></li>
+        <li><a href='/well_pumps/commercial/crane_services/new'>New Crane Service</a></li>
+        <li><a href='/well_pumps/commercial/trenchings/new'>New Trenching</a></li>
+        <li><a href='/well_pumps/commercial/pumps_tanks_booster/new'>New Pumps Tanks Boosters</a></li>
+        <li><a href='/well_pumps/residential/new_service_lines/new'>New Service Line</a></li>
+        <li><a href='/well_pumps/residential/new_pumps_pressure_tanks/new'>New Pumps and Pressure Tanks</a></li>
+        <li><a href='/well_pumps/residential/emergency_services/new'>New Emergency Service</a></li>
+        <li><a href='/well_pumps/residential/repairs_conversions_pit_repairs/new'>New Reppairs/Conversions</a></li>
+        <li><a href='/well_pumps/service_repairs/new'>New Service Repair</a></li>
+        <li><a href='/well_pumps/well_inpsections/new'>New Well Inspection</a></li>
+        <li><a href='/water_storage/low_yielding_wells/new'>New Low Yielding Well</a></li>
+        <li><a href='/water_storage/irrigation_storages/new'>New Irrigation Storage</a></li>
+        <li><a href='/water_testings/new'>New Water Testing</a></li>
+        <li><a href='/flood_preventions/new'>New Flood Prevention</a></li>
+        <li><a href='/water_treatment/commercial/hospitality/softners/new'>New Softners</a></li>
+        <li><a href='/water_treatment/commercial/hospitality/chlorine_removals/new'>New Chlorine Removal</a></li>
+        <li><a href='/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis/new'>New Ultrapure/Reverse Osmosis</a></li>
+        <li><a href='/water_treatment/commercial/hospitality/custom_applications/new'>New Custom Application</a></li>
+        <li><a href='/water_treatment/reverse_osmosis/undersinks/new'>New Undersink RO</a></li>
+        <li><a href='/water_treatment/reverse_osmosis/basements/new'>New Basement RO</a></li>
+        <li><a href='/water_treatment/reverse_osmosis/whole_houses/new'>New Wholse House RO</a></li>
+      </ul>
+    </div>
+  <% end %>
+
 
   <h1 class="text-center">NATIONAL WATER SERVICE</h1>
   <hr>
