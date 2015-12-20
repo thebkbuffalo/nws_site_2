@@ -33,6 +33,11 @@ a:hover {
   border: none;
 }
 
+.nav-tabs li a:focus {
+  background: #2E79BA;
+  background-color: #2E79BA;
+}
+
 .nav .open a:focus {
   background-color: #2E79BA;
 }
