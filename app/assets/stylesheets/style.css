@@ -11,6 +11,10 @@ hr {
   margin: 1.2em 10em;
 }
 
+.inactive {
+  display: none;
+}
+
 .hr2 {
   margin: 1.2em 30em;
 }
@@ -144,4 +148,8 @@ header {
   border: 1px solid black;
   padding: 3em 4em;
   background: #88BEF5;
+}
+
+.main_content_section {
+  margin: 0 10em;
 }

@@ -1,4 +1,9 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+.water_testing_header {
+
+}
+
+.water_testing_header h2 {
+  display: inline-block;
+  padding: 0 1em;
+  cursor: pointer;
+}
