@@ -11,6 +11,10 @@ hr {
   margin: 1.2em 10em;
 }
 
+.hr2 {
+  margin: 1.2em 30em;
+}
+
 a:hover {
   background: none;
   text-decoration: none;
@@ -29,7 +33,7 @@ a:hover {
 
 
 .nav-tabs li a:hover {
-  background-color: #2E79BA;
+  background-color: #5FC9F3;
   border: none;
 }
 
@@ -40,6 +44,27 @@ a:hover {
 
 .nav .open a:focus {
   background-color: #2E79BA;
+}
+
+header {
+  background-color: #94CBFF;
+  margin-top: -2.5em;
+}
+
+.header_inner {
+  padding: 2em 0;
+}
+
+.header_image {
+  margin-left: 5em;
+}
+
+.social_media_icons i {
+  padding: 0 .4em;
+}
+
+.header_phone {
+  margin: 1em 5em 0 0;
 }
 
 #main_dropdown {

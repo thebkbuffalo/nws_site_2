@@ -4,7 +4,7 @@
   <% if current_user %>
     <h3><%= link_to 'New Blog', new_blog_path %></h3>
   <% end %>
-  <hr>
+  <hr class="hr2">
     <% @blogs.each do |blog| %>
       <div class='blog_content'>
         <h2><%= simple_format(blog.title, class: 'blog_title') %></h2>
