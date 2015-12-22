@@ -69,6 +69,7 @@ header {
 
 .header_phone {
   margin: 1em 5em 0 0;
+  color: #363636;
 }
 
 #main_dropdown {
@@ -152,4 +153,8 @@ header {
 
 .main_content_section {
   margin: 0 10em;
+}
+
+.new_picture {
+  margin: 5em 45em;
 }
