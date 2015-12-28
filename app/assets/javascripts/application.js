@@ -16,4 +16,5 @@
 //= require jquery.turbolinks
 //= require bootstrap
 //= require lightbox
+//= require offcanvas
 //= require_tree .
