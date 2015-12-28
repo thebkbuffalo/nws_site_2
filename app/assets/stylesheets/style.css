@@ -39,6 +39,7 @@ a:hover {
 .nav-tabs li a:hover {
   background-color: #5FC9F3;
   border: none;
+  color: black;
 }
 
 .nav-tabs li a:focus {
