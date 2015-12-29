@@ -1,5 +1,6 @@
 body {
   margin-top: 7em;
+  font-family: 'Rufina', serif;
 }
 
 textarea {
@@ -29,6 +30,12 @@ a:hover {
   border-bottom: 0px;
   font-size: 1.3em;
   margin: .7em 0;
+  /*font-family: 'Rufina', serif;*/
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .navbar {
