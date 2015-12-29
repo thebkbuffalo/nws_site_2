@@ -135,22 +135,12 @@ header {
   color: white;
   background-image: url('https://placeimg.com/1000/250/nature');
   border: 1px solid white;
-  padding: 3em 5em;
+  /*padding: 3em 5em;*/
   margin: 2em 0;
+  width: 500px;
+  height: 166px;
 }
 
-.storage_button {
-  border-radius: 15px;
-  border: 1px solid black;
-  padding: 3em 5em;
-  background: white;
-}
-
-.testings_button {
-  border: 1px solid black;
-  padding: 3em 4em;
-  background: #88BEF5;
-}
 
 .main_content_section {
   margin: 0 10em;
