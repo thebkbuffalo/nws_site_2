@@ -1,13 +1,13 @@
-<div class="water_testing_header text-center">
-  <h2 class="water_testing_nav">WATER TESTING</h2>
-  <h2 class="water_testing_gallery_nav">WATER TESTING GALLERY</h2>
+<div class="sub_header text-center">
+  <h2 class="sub_nav_content">WATER TESTING</h2>
+  <h2 class="sub_nav_gallery">WATER TESTING GALLERY</h2>
 </div>
 
 <% if current_user %>
   <h3><%= link_to 'New Picture', '/water_testings/new' %></h3>
 <% end %>
 
-<div class="water_testing_content main_content_section">
+<div class="main_content_section">
   <h1>Something about Testing Water</h1>
   <%= image_tag('http://lorempixel.com/675/200/nature') %>
   <p>Stumptown fashion axe forage blue bottle, +1 before they sold out pour-over cred. Yr franzen ethical, 8-bit next level selfies drinking vinegar bicycle rights stumptown pour-over readymade meggings ugh. Etsy chicharrones retro, banjo VHS shabby chic raw denim. Health goth chicharrones next level listicle vinyl pug pickled pour-over. Shabby chic semiotics messenger bag waistcoat disrupt cronut. Brooklyn vice bicycle rights meggings wayfarers pickled. Tousled neutra distillery, chambray freegan celiac actually poutine plaid.</p>
@@ -21,7 +21,7 @@
   <p>Pour-over truffaut small batch jean shorts sartorial, viral poutine lo-fi venmo ugh chartreuse thundercats meditation marfa beard. Organic sriracha fingerstache, meh vegan kickstarter seitan pinterest VHS biodiesel. Skateboard vice brooklyn, blog scenester narwhal gochujang thundercats readymade lomo. Vinyl retro chicharrones meh irony, austin cold-pressed freegan church-key photo booth umami yuccie. Bicycle rights ennui austin selfies. Synth cardigan fixie, shoreditch health goth taxidermy kogi keytar blog mustache. Drinking vinegar hoodie photo booth affogato actually.</p>
 </div>
 
-<div class="water_testing_gallery inactive">
+<div class="image_gallery inactive">
   <% @water_testings.each do |water| %>
     <div class='images'>
       <%= link_to image_tag(water.water_testing_pic.url(:medium)), water.water_testing_pic.url, rel: 'lightbox' %>

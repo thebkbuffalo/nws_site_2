@@ -156,3 +156,9 @@ header {
 .new_picture {
   margin: 5em 45em;
 }
+
+.sub_header h2 {
+  display: inline-block;
+  padding: 0 1em;
+  cursor: pointer;
+}

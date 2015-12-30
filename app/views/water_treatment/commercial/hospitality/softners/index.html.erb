@@ -1,16 +1,32 @@
-<h1 class="text-center">Softners</h1>
+<div class="sub_header text-center">
+  <h2 class="sub_nav_content">SOFTNERS</h2>
+  <h2 class="sub_nav_gallery">SOFTNERS GALLERY</h2>
+</div>
 
 <% if current_user %>
   <h3><%= link_to 'New Picture', '/water_treatment/commercial/hospitality/softners/new' %></h3>
 <% end %>
 
-<% @softners.each do |soft| %>
-  <div class='images'>
-    <%= link_to image_tag(soft.softner_pic.url(:medium)), soft.softner_pic.url, rel: 'lightbox' %>
-    <% if current_user %>
-      <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/softners/#{soft.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-    <% end %>
-  </div>
-<% end %>
+
+<div class="main_content_section">
+  <h1>Get The Astonishing Benefits Of Soft Water Without The High Costs!</h1>
+  <%= image_tag('girl_water_field.jpg', height:'250px', width:'700px') %>
+  <h2>Have you noticed any of the following?</h2>
+  <p>Stains or buildup on your sinks and bathtub?  You're using large amounts of soap to clean dishes or wash your hair?  Your water smells or tastes odd?</p>
+  <br>
+  <p><strong>These are signs of HARD water!</strong>  If left untreated, the minerals in hard water will cause yellow stains on plumbing fixtures and deposits of scale.  Over time this buildup of minerals will eventually clog plumbing and shorten the life span of your appliances (washing machine, coffee maker, dishwasher, water heater) and reduces their efficiency which costs you more money in the long run with higher energy and repair bills.</p>
+  <p>Water Softeners <strong>eliminate the effects of HARD water by removing the calcium and magnesium found in your water.</strong>  The water entering your home will pass through the media tank which contains a bed of resin beads coated in sodium ions.  The calcium and magnesium ions are exchanged for sodium (or potassium) ions which results in softened water.</p>
+</div>
+
+
+<div class="image_gallery inactive"
+  <% @softners.each do |soft| %>
+    <div class='images'>
+      <%= link_to image_tag(soft.softner_pic.url(:medium)), soft.softner_pic.url, rel: 'lightbox' %>
+      <% if current_user %>
+        <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/softners/#{soft.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+      <% end %>
+    </div>
+  <% end %>
 
 <h1 class='back'><%= link_to 'Back', '/water_treatment/commercial/hospitality' %></h1>
