@@ -50,12 +50,13 @@ p {
 }
 
 .nav-tabs li a:focus {
-  background: #2E79BA;
-  background-color: #2E79BA;
+  background: #5FC9F3;
+  background-color: #5FC9F3;
+  border: 1px black solid;
 }
 
 .nav .open a:focus {
-  background-color: #2E79BA;
+  background-color: #5FC9F3;
 }
 
 header {
@@ -161,4 +162,8 @@ header {
   display: inline-block;
   padding: 0 1em;
   cursor: pointer;
+}
+
+.home_btn:hover {
+  color: white;
 }
