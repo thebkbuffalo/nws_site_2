@@ -1,141 +1,24 @@
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
-    header {
-      margin-top: 0!important;
-    }
-  }
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
-    header {
-      margin-top: 0;
-    }
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none!important;
-    }
-}
-
-/* ----------- iPhone 6 ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
-    .home_btn {
-      font-size: 2em;
-    }
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
 
 }
 
-/* Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
 
 }
 
-/* ----------- iPhone 6+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
 
 }
 
-/* Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-    body {
-      margin-top: 0!important;
-    }
-    nav {
-      display: none;
-    }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
 
 }
