@@ -8,4 +8,13 @@ $(document).ready(function(){
     $('.image_gallery').removeClass('inactive');
     $('.main_content_section').addClass('inactive');
   });
+
+  $('.fa-bars').on('click', function(){
+    $('#overlay, #overlay-back, .phone_nav').fadeIn(500);
+  });
+
+  $('#overlay, #overlay-back').on('click', function(){
+    $('#overlay, #overlay-back, .phone_nav').fadeOut(500);
+  });
+
 });

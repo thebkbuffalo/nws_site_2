@@ -174,3 +174,36 @@ header {
 .fa-bars {
   padding: .3em 0;
 }
+
+/*Overlay hiding stuff for not mobileness*/
+#overlay-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 5;
+  display: none;
+}
+
+#overlay {
+  text-align: center;
+  position: absolute;
+  top: 25em;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.phone_nav {
+  display: none;
+  text-decoration: none;
+  z-index: 5;
+  color: white!important;
+  font-size: 5em;
+  top: 10em!important;
+}

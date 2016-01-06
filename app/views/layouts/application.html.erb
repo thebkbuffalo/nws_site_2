@@ -107,7 +107,8 @@
     Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
   <% end %> -->
 
-
+  <div id="overlay-back"></div>
+  <div id="overlay"><h1 class="phone_nav">Something About Robots</h1></div>
 <%= yield %>
 <div class="user_stuff">
   <h5><% if current_user %>
