@@ -6,6 +6,15 @@
   .mobile_nav {
     display: block!important;
   }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin: 0!important;
+  }
+  .header_phone {
+    margin: 1em 0 0 0!important;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -16,6 +25,15 @@
   .mobile_nav {
     display: block!important;
   }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin: 0!important;
+  }
+  .header_phone {
+    margin: 1em 0 0 0!important;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -25,6 +43,15 @@
   }
   .mobile_nav {
     display: block!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin: 0!important;
+  }
+  .header_phone {
+    margin: 1em 0 0 0!important;
   }
 }
 
@@ -39,6 +66,15 @@
   .fa-bars {
     padding: .2em 0!important;
   }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin: 0!important;
+  }
+  .header_phone {
+    margin: 1em 0 0 0!important;
+  }
 }
 
 /* Custom, iPhone Retina */
@@ -51,5 +87,14 @@
   }
   .fa-bars {
     padding: .2em 0!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin: 0!important;
+  }
+  .header_phone {
+    margin: 1em 0 0 0!important;
   }
 }
