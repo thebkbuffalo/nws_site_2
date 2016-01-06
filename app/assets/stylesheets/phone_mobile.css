@@ -1,109 +1,49 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
   .desktop_nav {
-    visibility: hidden!important;
+    display: none!important;
   }
   .mobile_nav {
-    visibility: visible!important;
-  }
-  .header_inner {
-    padding: 2em 0!important;
-  }
-  .header_image {
-    margin-left: 0!important;
-  }
-  .header_phone {
-    margin: 0!important;
-  }
-  .nav {
-    margin: 0em!important;
+    display: block!important;
   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .desktop_nav {
-    visibility: hidden!important;
+    display: none!important;
   }
   .mobile_nav {
-    visibility: visible!important;
-  }
-  .header_inner {
-    padding: 2em 0!important;
-  }
-  .header_image {
-    margin-left: 0!important;
-  }
-  .header_phone {
-    margin: 0!important;
-  }
-  .nav {
-    margin: 0em!important;
+    display: block!important;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
   .desktop_nav {
-    visibility: hidden!important;
+    display: none!important;
   }
   .mobile_nav {
-    visibility: visible!important;
-  }
-  .header_inner {
-    padding: 2em 0!important;
-  }
-  .header_image {
-    margin-left: 0!important;
-  }
-  .header_phone {
-    margin: 0!important;
-  }
-  .nav {
-    margin: 0em!important;
+    display: block!important;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   .desktop_nav {
-    visibility: hidden!important;
+    display: none!important;
   }
   .mobile_nav {
-    visibility: visible!important;
-  }
-  .header_inner {
-    padding: 2em 0!important;
-  }
-  .header_image {
-    margin-left: 0!important;
-  }
-  .header_phone {
-    margin: 0!important;
-  }
-  .nav {
-    margin: 0em!important;
+    display: block!important;
   }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
   .desktop_nav {
-    visibility: hidden!important;
+    display: none!important;
   }
   .mobile_nav {
-    visibility: visible!important;
-  }
-  .header_inner {
-    padding: 2em 0!important;
-  }
-  .header_image {
-    margin-left: 0!important;
-  }
-  .header_phone {
-    margin: 0!important;
-  }
-  .nav {
-    margin: 0em!important;
+    display: block!important;
   }
 }

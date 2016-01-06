@@ -43,7 +43,7 @@ p {
 }
 
 .mobile_nav {
-  visibility: hidden;
+  display: none;
 }
 
 .nav-tabs li a:hover {
