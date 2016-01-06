@@ -36,6 +36,9 @@
   .mobile_nav {
     display: block!important;
   }
+  .fa-bars {
+    padding: .2em 0!important;
+  }
 }
 
 /* Custom, iPhone Retina */
@@ -45,5 +48,8 @@
   }
   .mobile_nav {
     display: block!important;
+  }
+  .fa-bars {
+    padding: .2em 0!important;
   }
 }

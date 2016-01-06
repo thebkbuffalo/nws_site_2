@@ -174,3 +174,7 @@ header {
 .home_btn:hover {
   color: white;
 }
+
+.fa-bars {
+  padding: .3em 0;
+}
