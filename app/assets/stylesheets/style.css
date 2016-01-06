@@ -42,6 +42,9 @@ p {
   background-color: #5FC9F3;
 }
 
+.mobile_nav {
+  visibility: hidden;
+}
 
 .nav-tabs li a:hover {
   background-color: #5FC9F3;

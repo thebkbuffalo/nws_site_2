@@ -1,49 +1,109 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  nav {
-    display: none!important;
+  .desktop_nav {
+    visibility: hidden!important;
   }
-  body {
-    margin-top: 0!important;
-  }  
+  .mobile_nav {
+    visibility: visible!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin-left: 0!important;
+  }
+  .header_phone {
+    margin: 0!important;
+  }
+  .nav {
+    margin: 0em!important;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  nav {
-    display: none!important;
+  .desktop_nav {
+    visibility: hidden!important;
   }
-  body {
-    margin-top: 0!important;
+  .mobile_nav {
+    visibility: visible!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin-left: 0!important;
+  }
+  .header_phone {
+    margin: 0!important;
+  }
+  .nav {
+    margin: 0em!important;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  nav {
-    display: none!important;
+  .desktop_nav {
+    visibility: hidden!important;
   }
-  body {
-    margin-top: 0!important;
+  .mobile_nav {
+    visibility: visible!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin-left: 0!important;
+  }
+  .header_phone {
+    margin: 0!important;
+  }
+  .nav {
+    margin: 0em!important;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  nav {
-    display: none!important;
+  .desktop_nav {
+    visibility: hidden!important;
   }
-  body {
-    margin-top: 0!important;
+  .mobile_nav {
+    visibility: visible!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin-left: 0!important;
+  }
+  .header_phone {
+    margin: 0!important;
+  }
+  .nav {
+    margin: 0em!important;
   }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-  nav {
-    display: none!important;
+  .desktop_nav {
+    visibility: hidden!important;
   }
-  body {
-    margin-top: 0!important;
+  .mobile_nav {
+    visibility: visible!important;
+  }
+  .header_inner {
+    padding: 2em 0!important;
+  }
+  .header_image {
+    margin-left: 0!important;
+  }
+  .header_phone {
+    margin: 0!important;
+  }
+  .nav {
+    margin: 0em!important;
   }
 }
