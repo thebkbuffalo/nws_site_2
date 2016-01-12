@@ -59,7 +59,7 @@ class WellPumps::Commercial::CraneServicesController < ApplicationController
   end
 
   def crane_service_params
-    params.require(:crane_service).permit(:crane_pic)
+    params.require(:crane_service).permit(:crane_pic, :crane_service_tag)
   end
 
 end

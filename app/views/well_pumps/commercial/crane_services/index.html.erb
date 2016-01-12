@@ -5,7 +5,8 @@
 
 <% @crane_services.each do |crane| %>
   <div class='images'>
-    <%= link_to image_tag(crane.crane_pic.url(:medium)), crane.crane_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(crane.crane_pic.url(:medium)), crane.crane_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', placement: 'left'}, title: crane.crane_service_tag %>
+    <!-- <h4><%= crane.crane_service_tag %></h4> -->
     <br>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/commercial/crane_services/#{crane.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>

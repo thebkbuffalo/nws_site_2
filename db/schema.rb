@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217040433) do
+ActiveRecord::Schema.define(version: 20160112230943) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20151217040433) do
     t.string   "crane_pic_content_type"
     t.integer  "crane_pic_file_size"
     t.datetime "crane_pic_updated_at"
+    t.text     "crane_service_tag"
   end
 
   create_table "custom_applications", force: :cascade do |t|
@@ -129,6 +130,7 @@ ActiveRecord::Schema.define(version: 20151217040433) do
     t.string   "ptb_pic_content_type"
     t.integer  "ptb_pic_file_size"
     t.datetime "ptb_pic_updated_at"
+    t.text     "ptb_tag"
   end
 
   create_table "repair_conversion_pit_repairs", force: :cascade do |t|
@@ -165,6 +167,7 @@ ActiveRecord::Schema.define(version: 20151217040433) do
     t.string   "trench_pic_content_type"
     t.integer  "trench_pic_file_size"
     t.datetime "trench_pic_updated_at"
+    t.text     "trenching_tag"
   end
 
   create_table "ultrapures", force: :cascade do |t|

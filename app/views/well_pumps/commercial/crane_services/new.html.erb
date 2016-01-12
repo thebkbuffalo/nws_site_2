@@ -3,6 +3,9 @@
     <h3>Add A New Picture</h3>
     <%= f.file_field :crane_pic %>
     <br>
+    <h3>Add A Tag Line</h3>
+    <%= f.text_field :crane_service_tag, class: 'form-control', rows: 8 %>
+    <br><br>
     <%= f.submit %>
   <% end %>
 </div>
