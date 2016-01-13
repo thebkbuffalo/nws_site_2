@@ -58,7 +58,7 @@ class WellPumps::Commercial::TrenchingsController < ApplicationController
   end
 
   def trenching_params
-    params.require(:trenching).permit(:trench_pic)
+    params.require(:trenching).permit(:trench_pic, :trenching_tag)
   end
 
 end

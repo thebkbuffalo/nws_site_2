@@ -1,5 +1,11 @@
-<%= form_for PumpsTanksBooster.new, url: '/well_pumps/commercial/pumps_tanks_boosters', html: { multipart: true } do |f| %>
-  <%= f.file_field :ptb_pic %>
-  <br>
-  <%= f.submit %>
-<% end %>
+<div class="new_picture">
+  <%= form_for PumpsTanksBooster.new, url: '/well_pumps/commercial/pumps_tanks_boosters', html: { multipart: true } do |f| %>
+    <h3>Add A New Picture</h3>
+    <%= f.file_field :ptb_pic %>
+    <br>
+    <h3>Add A Tag Line</h3>
+    <%= f.text_field :ptb_tag, class: 'form-control', rows: 8 %>
+    <br>
+    <%= f.submit %>
+  <% end %>
+</div>

@@ -58,7 +58,7 @@ class WellPumps::Commercial::PumpsTanksBoostersController < ApplicationControlle
   end
 
   def ptb_params
-    params.require(:pumps_tanks_booster).permit(:ptb_pic)
+    params.require(:pumps_tanks_booster).permit(:ptb_pic, :ptb_tag)
   end
 
 end

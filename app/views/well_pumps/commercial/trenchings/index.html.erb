@@ -5,7 +5,7 @@
 
 <% @trenchings.each do |trench| %>
   <div class='images'>
-    <%= link_to image_tag(trench.trench_pic.url(:medium)), trench.trench_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(trench.trench_pic.url(:medium)), trench.trench_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', placement: 'left'}, title: trench.trenching_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/commercial/trenchings/#{trench.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>
