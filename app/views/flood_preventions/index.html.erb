@@ -6,7 +6,7 @@
 
 <% @flood_preventions.each do |flood| %>
   <div class='images'>
-    <%= link_to image_tag(flood.flood_pic.url(:medium)), flood.flood_pic.url, rel: "lightbox" %>
+    <%= link_to image_tag(flood.flood_pic.url(:medium)), flood.flood_pic.url, rel: "lightbox", data: {toggle: 'tooltip', position: 'left'}, title: flood.flood_prevention_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/flood_preventions/#{flood.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

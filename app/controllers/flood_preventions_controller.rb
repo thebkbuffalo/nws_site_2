@@ -58,7 +58,7 @@ class FloodPreventionsController < ApplicationController
   end
 
   def flood_prevention_params
-    params.require(:flood_prevention).permit(:flood_pic)
+    params.require(:flood_prevention).permit(:flood_pic, :flood_prevention_tag)
   end
 
 end

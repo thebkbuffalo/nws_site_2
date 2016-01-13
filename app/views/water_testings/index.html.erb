@@ -24,7 +24,7 @@
 <div class="image_gallery inactive">
   <% @water_testings.each do |water| %>
     <div class='images'>
-      <%= link_to image_tag(water.water_testing_pic.url(:medium)), water.water_testing_pic.url, rel: 'lightbox' %>
+      <%= link_to image_tag(water.water_testing_pic.url(:medium)), water.water_testing_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: water.water_testing_tag %>
       <% if current_user %>
         <h4><%= link_to 'DELETE', "/water_testings/#{water.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
       <% end %>

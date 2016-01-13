@@ -58,6 +58,6 @@ class WaterTestingsController < ApplicationController
   end
 
   def water_testing_params
-    params.require(:water_testing).permit(:water_testing_pic)
+    params.require(:water_testing).permit(:water_testing_pic, :water_testing_tag)
   end
 end
