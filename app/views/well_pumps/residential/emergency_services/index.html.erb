@@ -6,7 +6,7 @@
 
 <% @emergency_services.each do |emergency| %>
   <div class='images'>
-    <%= link_to image_tag(emergency.emergency_pic.url(:medium)), emergency.emergency_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(emergency.emergency_pic.url(:medium)), emergency.emergency_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: emergency.es_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/residential/emergency_services/#{emergency.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

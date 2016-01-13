@@ -6,7 +6,7 @@
 
 <% @new_service_lines.each do |nsl| %>
   <div class='images'>
-    <%= link_to image_tag(nsl.nsl_pic.url(:medium)), nsl.nsl_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(nsl.nsl_pic.url(:medium)), nsl.nsl_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: nsl.nsl_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/residential/new_service_lines/#{nsl.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

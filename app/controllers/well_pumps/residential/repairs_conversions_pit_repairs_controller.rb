@@ -58,7 +58,7 @@ class WellPumps::Residential::RepairsConversionsPitRepairsController < Applicati
   end
 
   def rcpr_params
-    params.require(:repair_conversion_pit_repair).permit(:rcpr_pic)
+    params.require(:repair_conversion_pit_repair).permit(:rcpr_pic, :rcpr_tag)
   end
-  
+
 end

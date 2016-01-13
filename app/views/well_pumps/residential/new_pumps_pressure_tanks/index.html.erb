@@ -6,7 +6,7 @@
 
 <% @pumps_pressure_tanks.each do |ppt| %>
   <div class='images'>
-    <%= link_to image_tag(ppt.ppt_pic.url(:medium)), ppt.ppt_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(ppt.ppt_pic.url(:medium)), ppt.ppt_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: ppt.ppt_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/residential/new_pumps_pressure_tanks/#{ppt.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

@@ -58,7 +58,7 @@ class WellPumps::Residential::NewPumpsPressureTanksController < ApplicationContr
   end
 
   def ppt_params
-    params.require(:pumps_pressure_tank).permit(:ppt_pic)
+    params.require(:pumps_pressure_tank).permit(:ppt_pic, :ppt_tag)
   end
 
 end

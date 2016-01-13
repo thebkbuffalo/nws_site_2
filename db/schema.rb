@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160112230943) do
+ActiveRecord::Schema.define(version: 20160113011823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20160112230943) do
     t.string   "emergency_pic_content_type"
     t.integer  "emergency_pic_file_size"
     t.datetime "emergency_pic_updated_at"
+    t.text     "es_tag"
   end
 
   create_table "flood_preventions", force: :cascade do |t|
@@ -112,6 +113,7 @@ ActiveRecord::Schema.define(version: 20160112230943) do
     t.string   "nsl_pic_content_type"
     t.integer  "nsl_pic_file_size"
     t.datetime "nsl_pic_updated_at"
+    t.text     "nsl_tag"
   end
 
   create_table "pumps_pressure_tanks", force: :cascade do |t|
@@ -121,6 +123,7 @@ ActiveRecord::Schema.define(version: 20160112230943) do
     t.string   "ppt_pic_content_type"
     t.integer  "ppt_pic_file_size"
     t.datetime "ppt_pic_updated_at"
+    t.text     "ppt_tag"
   end
 
   create_table "pumps_tanks_boosters", force: :cascade do |t|
@@ -140,6 +143,7 @@ ActiveRecord::Schema.define(version: 20160112230943) do
     t.string   "rcpr_pic_content_type"
     t.integer  "rcpr_pic_file_size"
     t.datetime "rcpr_pic_updated_at"
+    t.text     "rcpr_tag"
   end
 
   create_table "service_repairs", force: :cascade do |t|

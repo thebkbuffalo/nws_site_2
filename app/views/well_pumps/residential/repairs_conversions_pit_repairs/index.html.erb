@@ -6,7 +6,7 @@
 
 <% @pit_conversions.each do |rcpr| %>
   <div class="images">
-    <%= link_to image_tag(rcpr.rcpr_pic.url(:medium)), rcpr.rcpr_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(rcpr.rcpr_pic.url(:medium)), rcpr.rcpr_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: rcpr.rcpr_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/residential/repairs_conversions_pit_repairs/#{rcpr.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

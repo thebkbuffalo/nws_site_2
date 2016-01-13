@@ -58,7 +58,7 @@ class WellPumps::Residential::EmergencyServicesController < ApplicationControlle
   end
 
   def emergence_service_params
-    params.require(:emergency_service).permit(:emergency_pic)
+    params.require(:emergency_service).permit(:emergency_pic, :es_tag)
   end
 
 end

@@ -58,6 +58,6 @@ class WellPumps::Residential::NewServiceLinesController < ApplicationController
   end
 
   def nsl_params
-    params.require(:new_service_line).permit(:nsl_pic)
+    params.require(:new_service_line).permit(:nsl_pic, :nsl_tag)
   end
 end
