@@ -5,7 +5,7 @@
 
 <% @well_inspections.each do |well| %>
   <div class='images'>
-    <%= link_to image_tag(well.well_inspection_pic.url(:medium)), well.well_inspection_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(well.well_inspection_pic.url(:medium)), well.well_inspection_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: well.well_inspection_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/well_inspections/#{well.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

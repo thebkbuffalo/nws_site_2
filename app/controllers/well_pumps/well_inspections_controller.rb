@@ -58,7 +58,7 @@ class WellPumps::WellInspectionsController < ApplicationController
   end
 
   def well_inspection_params
-    params.require(:well_inspection).permit(:well_inspection_pic)
+    params.require(:well_inspection).permit(:well_inspection_pic, :well_inspection_tag)
   end
 
 end

@@ -58,7 +58,7 @@ class WellPumps::ServiceRepairsController < ApplicationController
   end
 
   def service_repair_params
-    params.require(:service_repair).permit(:service_repair_pic )
+    params.require(:service_repair).permit(:service_repair_pic, :service_repair_tag)
   end
 
 end

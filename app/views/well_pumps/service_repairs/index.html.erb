@@ -6,7 +6,7 @@
 
 <% @service_repairs.each do |service| %>
   <div class='images'>
-    <%= link_to image_tag(service.service_repair_pic.url(:medium)), service.service_repair_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(service.service_repair_pic.url(:medium)), service.service_repair_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: service.service_repair_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/well_pumps/service_repairs/#{service.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>
