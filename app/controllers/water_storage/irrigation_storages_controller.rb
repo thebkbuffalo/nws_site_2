@@ -58,7 +58,7 @@ class WaterStorage::IrrigationStoragesController < ApplicationController
   end
 
   def irrigation_storage_params
-    params.require(:irrigation_storage).permit(:irrigation_storage_pic)
+    params.require(:irrigation_storage).permit(:irrigation_storage_pic, :irrigation_storage_tag)
   end
-  
+
 end

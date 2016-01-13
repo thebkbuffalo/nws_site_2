@@ -6,7 +6,7 @@
 
 <% @irrigation_storages.each do |irrigation| %>
   <div class='images'>
-    <%= link_to image_tag(irrigation.irrigation_storage_pic.url(:medium)), irrigation.irrigation_storage_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(irrigation.irrigation_storage_pic.url(:medium)), irrigation.irrigation_storage_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: irrigation.irrigation_storage_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_storage/irrigation_storages/#{irrigation.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

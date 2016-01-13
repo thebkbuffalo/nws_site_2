@@ -58,7 +58,7 @@ class WaterStorage::LowYieldingWellsController < ApplicationController
   end
 
   def low_yield_params
-    params.require(:low_yielding_well).permit(:low_yield_pic)
+    params.require(:low_yielding_well).permit(:low_yield_pic, :lyw_tag)
   end
-  
+
 end

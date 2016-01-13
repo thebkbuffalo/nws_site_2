@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160113021833) do
+ActiveRecord::Schema.define(version: 20160113023548) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(version: 20160113021833) do
     t.string   "irrigation_storage_pic_content_type"
     t.integer  "irrigation_storage_pic_file_size"
     t.datetime "irrigation_storage_pic_updated_at"
+    t.text     "irrigation_storage_tag"
   end
 
   create_table "low_yielding_wells", force: :cascade do |t|
@@ -104,6 +105,7 @@ ActiveRecord::Schema.define(version: 20160113021833) do
     t.string   "low_yield_pic_content_type"
     t.integer  "low_yield_pic_file_size"
     t.datetime "low_yield_pic_updated_at"
+    t.text     "lyw_tag"
   end
 
   create_table "new_service_lines", force: :cascade do |t|
