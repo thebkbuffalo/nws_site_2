@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160114015423) do
+ActiveRecord::Schema.define(version: 20160114021539) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20160114015423) do
     t.string   "basement_pic_content_type"
     t.integer  "basement_pic_file_size"
     t.datetime "basement_pic_updated_at"
+    t.text     "basement_tag"
   end
 
   create_table "blogs", force: :cascade do |t|
@@ -199,6 +200,7 @@ ActiveRecord::Schema.define(version: 20160114015423) do
     t.string   "undersink_pic_content_type"
     t.integer  "undersink_pic_file_size"
     t.datetime "undersink_pic_updated_at"
+    t.text     "undersink_tag"
   end
 
   create_table "users", force: :cascade do |t|
@@ -246,6 +248,7 @@ ActiveRecord::Schema.define(version: 20160114015423) do
     t.string   "house_pic_content_type"
     t.integer  "house_pic_file_size"
     t.datetime "house_pic_updated_at"
+    t.text     "whole_house_tag"
   end
 
 end

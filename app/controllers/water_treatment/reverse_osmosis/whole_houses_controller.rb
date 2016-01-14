@@ -58,6 +58,6 @@ class WaterTreatment::ReverseOsmosis::WholeHousesController < ApplicationControl
   end
 
   def whole_house_params
-    params.require(:whole_house).permit(:house_pic)
+    params.require(:whole_house).permit(:house_pic, :whole_house_tag)
   end
 end

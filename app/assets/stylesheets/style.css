@@ -211,3 +211,9 @@ header {
 .picture_box {
   width: 262;
 }
+
+.tooltip {
+  font-size: 10em!important;
+  width: 400px;
+  background: blue;
+}

@@ -58,6 +58,6 @@ class WaterTreatment::ReverseOsmosis::UndersinksController < ApplicationControll
   end
 
   def undersink_params
-    params.require(:undersink).permit(:undersink_pic)
+    params.require(:undersink).permit(:undersink_pic, :undersink_tag)
   end
 end

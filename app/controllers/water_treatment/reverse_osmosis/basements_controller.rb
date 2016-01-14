@@ -58,6 +58,6 @@ class WaterTreatment::ReverseOsmosis::BasementsController < ApplicationControlle
   end
 
   def basement_params
-    params.require(:basement).permit(:basement_pic)
+    params.require(:basement).permit(:basement_pic, :basement_tag)
   end
 end

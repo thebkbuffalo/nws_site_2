@@ -6,7 +6,7 @@
 
 <% @undersinks.each do |sink| %>
   <div class='images'>
-    <%= link_to image_tag(sink.undersink_pic.url(:medium)), sink.undersink_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(sink.undersink_pic.url(:medium)), sink.undersink_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: sink.undersink_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/reverse_osmosis/undersinks/#{sink.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

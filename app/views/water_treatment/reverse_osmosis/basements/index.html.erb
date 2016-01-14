@@ -5,7 +5,7 @@
 
 <% @basements.each do |basement| %>
   <div class='images'>
-    <%= link_to image_tag(basement.basement_pic.url(:medium)), basement.basement_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(basement.basement_pic.url(:medium)), basement.basement_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: basement.basement_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/reverse_osmosis/basements/#{basement.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>
