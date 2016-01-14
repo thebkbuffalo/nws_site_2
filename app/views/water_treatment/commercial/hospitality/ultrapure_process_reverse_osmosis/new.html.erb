@@ -1,5 +1,11 @@
-<%= form_for Ultrapure.new, url: '/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis', html: { multipart: true } do |f| %>
-  <%= f.file_field :ultrapure_pic %>
-  <br>
-  <%= f.submit %>
-<% end %>
+<div class="new_picture">
+  <%= form_for Ultrapure.new, url: '/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis', html: { multipart: true } do |f| %>
+    <h3>Add A New Photo</h3>
+    <%= f.file_field :ultrapure_pic %>
+    <br>
+    <h3>Add A New Tag</h3>
+    <%= f.text_field :ultrapure_tag, class: 'form-control', rows: 8 %>
+    <br>
+    <%= f.submit %>
+  <% end %>
+</div>

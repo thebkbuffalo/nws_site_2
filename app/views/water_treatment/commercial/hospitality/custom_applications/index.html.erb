@@ -6,7 +6,7 @@
 
 <% @custom_applications.each do |custom| %>
   <div class='images'>
-    <%= link_to image_tag(custom.custom_app_pic.url(:medium)), custom.custom_app_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(custom.custom_app_pic.url(:medium)), custom.custom_app_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: custom.custom_app_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/custom_applications/#{custom.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

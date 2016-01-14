@@ -58,7 +58,7 @@ class WaterTreatment::Commercial::Hospitality::UltrapureProcessReverseOsmosisCon
   end
 
   def ultrapure_params
-    params.require(:ultrapure).permit(:ultrapure_pic)
+    params.require(:ultrapure).permit(:ultrapure_pic, :ultrapure_tag)
   end
 
 end

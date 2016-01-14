@@ -6,7 +6,7 @@
 
 <% @ultrapures.each do |ultra| %>
   <div class='images'>
-    <%= link_to image_tag(ultra.ultrapure_pic.url(:medium)), ultra.ultrapure_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(ultra.ultrapure_pic.url(:medium)), ultra.ultrapure_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: ultra.ultrapure_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/ultrapure_process_reverse_osmosis/#{ultra.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

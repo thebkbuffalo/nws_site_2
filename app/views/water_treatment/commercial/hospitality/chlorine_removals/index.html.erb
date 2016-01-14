@@ -5,7 +5,7 @@
 
 <% @chlorine_removals.each do |chlorine| %>
   <div class='images'>
-    <%= link_to image_tag(chlorine.chlorine_pic.url(:medium)), chlorine.chlorine_pic.url, rel: 'stylesheet' %>
+    <%= link_to image_tag(chlorine.chlorine_pic.url(:medium)), chlorine.chlorine_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: chlorine.chlorine_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/chlorine_removals/#{chlorine.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

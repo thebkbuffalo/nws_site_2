@@ -58,6 +58,6 @@ class WaterTreatment::Commercial::Hospitality::CustomApplicationsController < Ap
   end
 
   def custom_app_params
-    params.require(:custom_application).permit(:custom_app_pic)
+    params.require(:custom_application).permit(:custom_app_pic, :custom_app_tag)
   end
 end

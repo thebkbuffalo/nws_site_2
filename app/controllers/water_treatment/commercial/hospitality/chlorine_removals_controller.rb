@@ -58,7 +58,7 @@ class WaterTreatment::Commercial::Hospitality::ChlorineRemovalsController < Appl
   end
 
   def chlorine_params
-    params.require(:chlorine_removal).permit(:chlorine_pic)
+    params.require(:chlorine_removal).permit(:chlorine_pic, :chlorine_tag)
   end
 
 end

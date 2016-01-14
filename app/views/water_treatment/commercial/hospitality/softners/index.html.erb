@@ -22,7 +22,7 @@
 <div class="image_gallery inactive">
   <% @softners.each do |soft| %>
     <div class='images'>
-      <%= link_to image_tag(soft.softner_pic.url(:medium)), soft.softner_pic.url, rel: 'lightbox' %>
+      <%= link_to image_tag(soft.softner_pic.url(:medium)), soft.softner_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: soft.softner_tag %>
       <% if current_user %>
         <h4><%= link_to 'DELETE', "/water_treatment/commercial/hospitality/softners/#{soft.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
       <% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160113024334) do
+ActiveRecord::Schema.define(version: 20160114011516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160113024334) do
     t.string   "chlorine_pic_content_type"
     t.integer  "chlorine_pic_file_size"
     t.datetime "chlorine_pic_updated_at"
+    t.text     "chlorine_tag"
   end
 
   create_table "crane_services", force: :cascade do |t|
@@ -58,6 +59,7 @@ ActiveRecord::Schema.define(version: 20160113024334) do
     t.string   "custom_app_pic_content_type"
     t.integer  "custom_app_pic_file_size"
     t.datetime "custom_app_pic_updated_at"
+    t.text     "custom_app_tag"
   end
 
   create_table "emergency_services", force: :cascade do |t|
@@ -166,6 +168,7 @@ ActiveRecord::Schema.define(version: 20160113024334) do
     t.string   "softner_pic_content_type"
     t.integer  "softner_pic_file_size"
     t.datetime "softner_pic_updated_at"
+    t.text     "softner_tag"
   end
 
   create_table "trenchings", force: :cascade do |t|
@@ -185,6 +188,7 @@ ActiveRecord::Schema.define(version: 20160113024334) do
     t.string   "ultrapure_pic_content_type"
     t.integer  "ultrapure_pic_file_size"
     t.datetime "ultrapure_pic_updated_at"
+    t.text     "ultrapure_tag"
   end
 
   create_table "undersinks", force: :cascade do |t|

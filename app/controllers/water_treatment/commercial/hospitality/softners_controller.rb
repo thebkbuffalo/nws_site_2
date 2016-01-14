@@ -58,7 +58,7 @@ class WaterTreatment::Commercial::Hospitality::SoftnersController < ApplicationC
   end
 
   def softner_params
-    params.require(:softner).permit(:softner_pic)
+    params.require(:softner).permit(:softner_pic, :softner_tag)
   end
 
 end
