@@ -5,7 +5,7 @@
 
 <% @icemakers.each do |ice| %>
   <div class='images'>
-    <%= link_to image_tag(ice.icemaker_pic.url(:medium)), ice.icemaker_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(ice.icemaker_pic.url(:medium)), ice.icemaker_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: ice.icemaker_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/commercial/office/drinking_water_icemakers/#{ice.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>

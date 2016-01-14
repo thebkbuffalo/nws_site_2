@@ -58,6 +58,6 @@ class WaterTreatment::Commercial::Office::DrinkingWaterIcemakersController < App
   end
 
   def icemaker_params
-    params.require(:icemaker).permit(:icemaker_pic)
+    params.require(:icemaker).permit(:icemaker_pic, :icemaker_tag)
   end
 end

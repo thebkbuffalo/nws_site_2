@@ -58,6 +58,6 @@ class WaterTreatment::Commercial::Office::WaterCoolersController < ApplicationCo
   end
 
   def water_cooler_params
-    params.require(:water_cooler).permit(:water_cooler_pic)
+    params.require(:water_cooler).permit(:water_cooler_pic, :water_cooler_tag)
   end
 end

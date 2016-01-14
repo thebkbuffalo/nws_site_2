@@ -1,5 +1,11 @@
-<%= form_for Icemaker.new, url: '/water_treatment/commercial/office/drinking_water_icemakers', html: { multipart: true } do |f| %>
-  <%= f.file_field :icemaker_pic %>
-  <br>
-  <%= f.submit %>
-<% end %>
+<div class='new_picture'>
+  <%= form_for Icemaker.new, url: '/water_treatment/commercial/office/drinking_water_icemakers', html: { multipart: true } do |f| %>
+    <h3>Add A New Photo</h3>
+    <%= f.file_field :icemaker_pic %>
+    <br>
+    <h3>Add A New Tag Line</h3>
+    <%= f.text_field :icemaker_tag, class: 'form-control', rows: 8 %>
+    <br>
+    <%= f.submit %>
+  <% end %>
+</div>

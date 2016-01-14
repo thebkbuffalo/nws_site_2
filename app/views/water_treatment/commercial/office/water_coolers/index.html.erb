@@ -5,7 +5,7 @@
 
 <% @water_coolers.each do |cooler| %>
   <div class='images'>
-    <%= link_to image_tag(cooler.water_cooler_pic.url(:medium)), cooler.water_cooler_pic.url, rel: 'lightbox' %>
+    <%= link_to image_tag(cooler.water_cooler_pic.url(:medium)), cooler.water_cooler_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', position: 'left'}, title: cooler.water_cooler_tag %>
     <% if current_user %>
       <h4><%= link_to 'DELETE', "/water_treatment/commercial/office/water_coolers/#{cooler.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
     <% end %>
