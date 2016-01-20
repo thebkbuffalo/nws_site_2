@@ -157,24 +157,25 @@ header {
 
 .menu_box {
   margin: 0 auto;
-  width: 50em;
+  width: 60em;
 }
 
-
 .menu_link {
-  margin-top: 1em;
+  margin-top: 2.5em;
 }
 
 .circle {
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
   border-radius: 100%;
-  background: black;
+  background-color: #41B3FF;
+  border: 1px solid black;
   margin-right: 1.3em;
 }
 
 .link_text {
   float: right;
+  margin-top: .85em;
 }
 
 
