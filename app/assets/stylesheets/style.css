@@ -74,7 +74,7 @@ p {
 }
 
 header {
-  /*background-color: #F1FAFB;*/
+  background-color: rgba(66,66,66,.93);
   /*background-image: url('http://crossfit56.com/wp-content/uploads/2015/05/o-FRESH-WATER-facebook.jpg');*/
   /*background-repeat: no-repeat;*/
   border-bottom: 2px solid black;
@@ -85,12 +85,17 @@ header {
   padding: 2em 6em;
 }
 
+.header_phone h3 {
+  color: white;
+}
+
 .header_image {
   margin-left: 5em;
 }
 
 .social_media_icons i {
   padding: 0 .4em;
+  color: white;
 }
 
 .header_phone {
