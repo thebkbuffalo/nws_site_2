@@ -1,9 +1,14 @@
 body {
   margin-top: 7em;
   font-family: 'Rufina', serif;
-  background-image: url('shining-blue-water-background.jpg');
+  /*background-image: url('shining-blue-water-background.jpg');
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: 200%;*/
+  background: url('shining-blue-water-background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 textarea {
