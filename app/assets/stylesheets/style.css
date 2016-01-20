@@ -1,6 +1,9 @@
 body {
   margin-top: 7em;
   font-family: 'Rufina', serif;
+  background-image: url('shining-blue-water-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 200%;
 }
 
 textarea {
@@ -43,7 +46,7 @@ p {
 }
 
 .navbar {
-  background-color: #5FC9F3;
+  background-color: #00C3FF;
 }
 
 .mobile_nav {
@@ -71,9 +74,10 @@ p {
 }
 
 header {
-  background-color: #94CBFF;
+  /*background-color: #F1FAFB;*/
   /*background-image: url('http://crossfit56.com/wp-content/uploads/2015/05/o-FRESH-WATER-facebook.jpg');*/
   /*background-repeat: no-repeat;*/
+  border-bottom: 2px solid black;
   margin-top: -2.5em;
 }
 
@@ -170,7 +174,7 @@ header {
   height: 100px;
   width: 100px;
   border-radius: 100%;
-  background-color: #41B3FF;
+  background-color: #424242;
   border: 1px solid black;
   margin-right: 1.3em;
 }
