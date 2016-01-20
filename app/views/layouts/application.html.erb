@@ -117,6 +117,9 @@
     <a class="phone_nav" href="/water_treatment">Water Treatment</a>
   </div>
 <%= yield %>
+
+
+<a href="/"><h3>Restart(back to home)</h3></a>
 <div class="user_stuff">
   <h5><% if current_user %>
     <%= link_to "Logout", '/logout' %> | Signed in as <%= current_user.name %>

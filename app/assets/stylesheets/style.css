@@ -240,8 +240,6 @@ header {
   width: 262;
 }
 
-.tooltip {
-  font-size: 10em!important;
-  width: 400px;
-  background: blue;
+.tooltip-inner {
+  font-size: 1.5em;
 }

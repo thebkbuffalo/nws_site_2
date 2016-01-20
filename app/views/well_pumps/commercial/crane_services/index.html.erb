@@ -5,7 +5,7 @@
 
 <% @crane_services.each do |crane| %>
   <div class='images'>
-    <%= link_to image_tag(crane.crane_pic.url(:medium)), crane.crane_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', placement: 'left'}, title: crane.crane_service_tag %>
+    <%= link_to image_tag(crane.crane_pic.url(:medium)), crane.crane_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', placement: 'bottom', class: 'big_tooltip'}, title: crane.crane_service_tag %>
     <!-- <h4><%= crane.crane_service_tag %></h4> -->
     <br>
     <% if current_user %>

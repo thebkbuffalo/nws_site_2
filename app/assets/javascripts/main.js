@@ -17,6 +17,6 @@ $(document).ready(function(){
     $('#overlay, #overlay-back, .phone_nav').fadeOut(500);
   });
 
-  
+  $('[data-toggle=tooltip]').tooltip();
 
 });
