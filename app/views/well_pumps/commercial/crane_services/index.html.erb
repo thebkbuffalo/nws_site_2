@@ -1,16 +1,38 @@
-<h1 class="text-center">CRANE SERVICES</h1>
+<div class="sub_header text-center">
+  <h2 class="sub_nav_content">Crane Services</h2>
+  <h2 class="sub_nav_gallery">Crane Services Gallery</h2>
+</div>
+
+<!-- <h1 class="text-center">CRANE SERVICES</h1> -->
 <% if current_user %>
   <h2><%= link_to 'New Picture', '/well_pumps/commercial/crane_services/new' %></h2>
 <% end %>
 
-<% @crane_services.each do |crane| %>
-  <div class='images'>
-    <%= link_to image_tag(crane.crane_pic.url(:medium)), crane.crane_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', placement: 'bottom', class: 'big_tooltip'}, title: crane.crane_service_tag %>
-    <!-- <h4><%= crane.crane_service_tag %></h4> -->
-    <br>
-    <% if current_user %>
-      <h4><%= link_to 'DELETE', "/well_pumps/commercial/crane_services/#{crane.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-    <% end %>
-  </div>
-<% end %>
+<div class="main_content_section">
+  <h1>Something about Crane Services</h1>
+  <%= image_tag('http://lorempixel.com/675/200/nature') %>
+  <p>Stumptown fashion axe forage blue bottle, +1 before they sold out pour-over cred. Yr franzen ethical, 8-bit next level selfies drinking vinegar bicycle rights stumptown pour-over readymade meggings ugh. Etsy chicharrones retro, banjo VHS shabby chic raw denim. Health goth chicharrones next level listicle vinyl pug pickled pour-over. Shabby chic semiotics messenger bag waistcoat disrupt cronut. Brooklyn vice bicycle rights meggings wayfarers pickled. Tousled neutra distillery, chambray freegan celiac actually poutine plaid.</p>
+  <p>Schlitz ethical health goth, typewriter readymade gochujang fashion axe. Migas VHS truffaut, williamsburg flannel ugh synth butcher iPhone paleo pour-over viral. Blue bottle synth meditation, irony franzen 8-bit photo booth master cleanse distillery pickled green juice salvia chartreuse. Cred deep v flannel, portland single-origin coffee leggings fanny pack helvetica occupy gluten-free beard pitchfork +1 organic. Skateboard biodiesel celiac, pitchfork mlkshk try-hard fanny pack kale chips cornhole synth aesthetic blog. Artisan freegan taxidermy, asymmetrical fanny pack tumblr lumbersexual knausgaard food truck biodiesel quinoa. Ethical XOXO twee roof party marfa.</p>
+  <br>
+  <hr>
+  <br>
+  <h1>Something ELSE about Crane Services</h1>
+  <%= image_tag('http://lorempixel.com/675/200/nature') %>
+  <p>Direct trade chillwave chambray, occupy franzen banh mi scenester keffiyeh master cleanse hella pour-over polaroid tousled. Kitsch street art distillery, helvetica try-hard ethical artisan 8-bit gluten-free sustainable put a bird on it roof party chambray brunch selvage. Everyday carry cold-pressed put a bird on it migas deep v, gastropub meggings hammock jean shorts fixie scenester helvetica church-key aesthetic. Beard iPhone microdosing selvage. Sriracha irony slow-carb, taxidermy chillwave +1 cardigan asymmetrical raw denim. Yuccie readymade pinterest offal meditation 3 wolf moon. Franzen yr narwhal kinfolk, pop-up irony banjo kitsch microdosing neutra freegan crucifix shoreditch.</p>
+  <p>Pour-over truffaut small batch jean shorts sartorial, viral poutine lo-fi venmo ugh chartreuse thundercats meditation marfa beard. Organic sriracha fingerstache, meh vegan kickstarter seitan pinterest VHS biodiesel. Skateboard vice brooklyn, blog scenester narwhal gochujang thundercats readymade lomo. Vinyl retro chicharrones meh irony, austin cold-pressed freegan church-key photo booth umami yuccie. Bicycle rights ennui austin selfies. Synth cardigan fixie, shoreditch health goth taxidermy kogi keytar blog mustache. Drinking vinegar hoodie photo booth affogato actually.</p>
+</div>
+
+<div class="image_gallery inactive">
+  <% @crane_services.each do |crane| %>
+    <div class='images'>
+      <%= link_to image_tag(crane.crane_pic.url(:medium)), crane.crane_pic.url, rel: 'lightbox', data: {toggle: 'tooltip', placement: 'bottom', class: 'big_tooltip'}, title: crane.crane_service_tag %>
+      <!-- <h4><%= crane.crane_service_tag %></h4> -->
+      <br>
+      <% if current_user %>
+        <h4><%= link_to 'DELETE', "/well_pumps/commercial/crane_services/#{crane.id}", method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
 <h1 class='back'><%= link_to 'Back', '/well_pumps/commercial' %></h1>
